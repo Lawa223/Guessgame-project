@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(to top left, #28b487, #7dd56f);
+      }
+      h1 {
+        font-family: sans-serif;
+        font-size: 50px;
+        line-height: 1.3;
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        color: white;
+      }
+    </style>
+    <title>Forkify</title>
+    <link rel="stylesheet" href="finalp.css" />
+  </head>
+  <body>
+    <!-- <h1>FORKIFY</h1> -->
+    <div class="container">
+      <header class="header">
+        <!-- <img src="p25.jpg" alt="Logo" class="header__logo" /> -->
+        <form class="search"></form>
+        <input
+          type="text"
+          class="search__field"
+          placeholder="search over 1,000,000 recipes..."
+        />
+         <button class="btn search__btn">
+          <svg class="serch__icon">
+          <use href="p25.jpg"></use>
+        </svg>
+        <span>Search</span>
+        </button>
+      </form> 
+
+        <!-- <form class="search">
+          <input type="text" class="search__field"> -->
+       
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+               <button class="nav__btn nav__btn--add-recipe">
+                <svg class="nav__icon">
+                  <use href="src/img/icon.svg#icon-bookmark"></use>
+                </svg>
+                <span>Bookmarks</span>
+               </button>
+                <div
+                class="bookmarks">
+                <ul class="bookmarks__list">
+                  <div class="message">
+                    <div>
+                      <svg class="nav__icon">
+                        <use href="src/img/icon.svg#icon-smile"></use>
+                      </svg>
+                    </div>
+                    <p>
+                      No bookmarks yet. Find a nice recipe and bookmark it :
+                    </p>
+
+                  </div>
+
+                </ul>
+              </div>
+              </li>
+
+            </ul>
+
+          </nav>
+      </header>
+    </div>
+
+    <div class="overlay hidden"></div>
+    <div class="add-recipe-window hidden"></div>
+    <button class="btn--close-modal">&times;</button>
+    <form class="upload">
+      <div class="upload__column">
+        <h3 class="upload__heading">Recipe data</h3>
+        <label>Title</label>
+        <input value="TEST23" required name="title" type="text" />
+        <label>URL</label>
+        <input value="TEST23" required name="sourceURL" type="text" />
+        <label>Image URL</label>
+        <input value="TEST23" required name="image" type="text" />
+        <label>Publisher</label>
+        <input value="TEST23" required name="publisher" type="text" />
+        <label>Prep time</label>
+        <input value="23" required name="cookingTime" type="number" />
+        <label>Servings</label>
+        <input value="23" required name="servings" type="number" />
+      </div>
+
+      <div class="upload__column">
+        <h3 class="upload__heading">Ingredients</h3>
+        <label>Ingredients 1</label>
+        <input
+          value="text"
+          required
+          name="ingredients"
+          placeholder=" Format:
+        'Quantity,Unit,Description'"
+        />
+
+        <label>Ingredients 2</label>
+        <input
+          value="text"
+          required
+          name="ingredients"
+          placeholder=" Format:
+      'Quantity,Unit,Description'"
+        />
+      </div>
+    </form>
+
+    <script src="finalP.js"></script>
+  </body>
+</html>

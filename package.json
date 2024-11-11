@@ -1,0 +1,19 @@
+{
+  "name": "guessgame",
+  "version": "1.0.0",
+  "default": "finalP.html",
+  "scripts": {
+    "start": "parcel finalP.html",
+    "buil": "parcel build finalP.html --dist-dir ./dist"
+  },
+  "author": "Abiola",
+  "license": "ISC",
+  "description": "Recipe application",
+  "dependencies": {
+    "core-js": "^3.39.0",
+    "fractional": "^1.0.0",
+    "leaflet": "^1.9.4",
+    "lodash-es": "^4.17.21",
+    "regenerator-runtime": "^0.14.1"
+  }
+}

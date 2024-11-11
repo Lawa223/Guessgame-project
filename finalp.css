@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: linear-gradient(#28b487, #7dd56f);
+  height: 50vh;
+}
+.search__field {
+  height: 50px;
+  width: 60vh;
+  /* margin-top: -0vh; */
+  /* float: right; */
+  margin-left: 35vh;
+  border-radius: 20px;
+}
